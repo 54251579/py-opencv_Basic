@@ -9,7 +9,7 @@ def write(filename):
     name = 'Jane'
     age = 10
     pt1 = (100, 50)
-    scoures =(80,90,70)
+    scores =(80,90,70)
     mat1 = np.array([[1.0, 1.5], [2.0, 3.1]], dtype=np.float64)
     fs = cv.FileStorage(filename, cv.FILE_STORAGE_WRITE)
 
@@ -20,7 +20,7 @@ def write(filename):
     fs.write('name', name)
     fs.write('age', age)
     fs.write('point', pt1)
-    fs.write('scoures', scoures)
+    fs.write('scores', scores)
     fs.write('data', mat1)
 
     fs.release()
