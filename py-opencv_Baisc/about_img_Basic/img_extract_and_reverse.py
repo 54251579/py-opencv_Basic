@@ -3,7 +3,7 @@ import sys
 
 path = # img path
 
-img = cv.imread(path)
+img1 = cv.imread(path)
 
 if img1 is None:
     print('image load failed')
