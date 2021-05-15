@@ -1,5 +1,5 @@
 import cv2 as cv
-import numpy as np
+import sys
 
 path = # img path
 
@@ -7,7 +7,7 @@ img = cv.imread(path)
 
 if img1 is None:
     print('image load failed')
-    exit()
+    sys.exit()
 
 img2 = img1
 img3 = img1.copy()

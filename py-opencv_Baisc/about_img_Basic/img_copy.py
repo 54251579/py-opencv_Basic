@@ -1,5 +1,5 @@
 import cv2 as cv
-import numpy as np
+import sys
 
 path = # img path
 
@@ -7,7 +7,7 @@ img = cv.imread(path)
 
 if img is None:
     print('image load failed')
-    exit()
+    sys.exit()
 
 print(type(img))
 print(img.shape)

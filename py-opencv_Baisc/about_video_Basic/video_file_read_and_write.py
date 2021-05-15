@@ -1,4 +1,5 @@
 import cv2 as cv
+import sys
 
 path = # video path
 
@@ -19,7 +20,7 @@ out_put_video = cv.VideoWriter('output.avi', fourcc, fps, (width, height))
 
 if not out_put_video.isOpened():
     print('file open failed')
-    exit()
+    sys.exit()
 
 while True:
     

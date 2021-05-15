@@ -1,12 +1,12 @@
 import cv2 as cv
-import numpy as np
+import sys
 
 path = # video path
 
 cap = cv.VideoCapture(path)
 if not cap.isOpened():
     print('video open failed')
-    exit()
+    sys.exit()
 
 print('frame width:', int(cap.get(cv.CAP_PROP_FRAME_WIDTH)))
 print('frame height:', int(cap.get(cv.CAP_PROP_FRAME_HEIGHT)))
